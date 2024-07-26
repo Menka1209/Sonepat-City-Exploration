@@ -1,0 +1,408 @@
+    /* Fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    /* Variables */
+    
+    :root {
+        --primary-color: #7b61ff;
+        --secondary-color: #f6f4ff;
+        --footer-color: #f9f9f9;
+        --title-font-size: 3.2rem;
+        --small-font-size: 1.3rem;
+        --h2-font-weight: 600;
+        --card--gap: 3.2rem;
+        --container--size: 73%;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        font-size: 10px;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        line-height: 3.2rem;
+        overflow-x: hidden;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    img {
+        object-fit: cover;
+    }
+    /* Main */
+    
+    .main {
+        position: relative;
+        background: url("Showcase Cover.png") no-repeat center center/cover;
+        min-height: 900px;
+        border-radius: 0 0 50px 50px;
+    }
+    /* Header */
+    
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        color: #fff;
+        max-width: var(--container--size);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4.8rem;
+        margin-bottom: 160px;
+    }
+    /* NAVIGATIONS */
+    
+    .navlists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    
+    .navlists li {
+        margin-right: 25px;
+        color: black;
+    }
+    
+    .navlists a {
+        opacity: 0.7;
+    }
+    
+    .navlists a:hover {
+        opacity: 1;
+    }
+    /* USER/LOGIN */
+    
+    .user-profile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .user-profile h2 {
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2.1rem;
+        align-items: flex-end;
+        font-size: 1.4rem;
+        color: white;
+    }
+    
+    .hello {
+        opacity: 0.7;
+    }
+    
+    .profile-pic {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .profile-pic img {
+        border-radius: 50%;
+        width: 100%;
+    }
+    /* Showcase Content */
+    
+    .showcase-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+        color: black;
+        font-size: 25px;
+    }
+    
+    .showcase-content h1 {
+        position: fixed;
+        top: 30%;
+        left: 30%;
+        font-weight: lighter;
+        font-size: larger;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        opacity: 1;
+    }
+    
+    .showcase-content a {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 32px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        background: var(--primary-color);
+        padding: 1.8rem 2.4rem;
+        border-radius: 1.2rem;
+    }
+    
+    .showcase-button a:hover {
+        background: var(--primary-color);
+        opacity: 0;
+        color: #f9f9f9;
+    }
+    
+    .showcase-button {
+        position: absolute;
+        top: 350px;
+        left: 50%;
+    }
+    /* Destination */
+    
+    .destinations-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    
+    .destination-card h5 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .destination-card h6 {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 19.5px;
+    }
+    
+    .destination-card img {
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    /* Hotels */
+    
+    .hotel-restaurants {
+        transition: 3s;
+    }
+    
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .hotel-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        transition: 0.3s;
+    }
+    
+    .hotel-cards {
+        position: relative;
+        border-radius: 12px;
+    }
+    
+    .hotel-cards img {
+        border-radius: 12px;
+    }
+    
+    .hotel-cards h5 {
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    
+    .hotel-cards h6 {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 19.5px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .ratings {
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+    }
+    
+    .off {
+        display: none;
+    }
+    
+    .on {
+        display: block;
+    }
+    /* Tours/Travel */
+    
+    .tours-cards h3 {
+        font-size: 2rem;
+    }
+    
+    .tours-cards {
+        display: flex;
+        gap: 3rem;
+    }
+    
+    .tours-card {
+        display: flex;
+        gap: 3rem;
+        flex: 1;
+    }
+    
+    .tours-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.6rem;
+    }
+    
+    .tours-card-content-icons {
+        display: flex;
+        gap: 3rem;
+        margin-top: 6rem;
+    }
+    
+    .tours-card-contents-text p {
+        margin-top: 2rem;
+    }
+    
+    .tours-card img {
+        border-radius: 12px;
+    }
+    /* Activities */
+    
+    .activities-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .activities-cards img {
+        border-radius: 12px;
+    }
+    
+    .activities-cards h4 {
+        font-size: 1.6rem;
+    }
+    /* About */
+    
+    #About {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    #About h2 {
+        font-size: var(--title-font-size);
+    }
+    
+    #About p {
+        width: 556px;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+    
+    #About .section-button {
+        width: 130px;
+    }
+    /* Footer */
+    
+    footer {
+        background: var(--footer-color);
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin-top: 120px;
+    }
+    
+    .footer-sections {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+        justify-content: space-between;
+    }
+    
+    .footer-sections ul {
+        margin-top: 2rem;
+    }
+    
+    .footer-section p {
+        font-size: 1.3rem;
+        width: 354px;
+        line-height: 1.9;
+        margin-block: 1rem 2rem;
+        color: #5b5b5b;
+    }
+    
+    .footer-section a {
+        color: #5b5b5b;
+        font-size: 1.3rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-social-icons {
+        display: flex;
+        gap: 3rem;
+    }
+    
+    .footer-section:last-child {
+        margin-left: auto;
+        margin-right: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-section:last-child form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .footer-section:last-child label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+        background-color: #fff;
+        color: #5b5b5b;
+        padding-left: 5px;
+    }
+    
+    .footer-section:last-child input {
+        border: none;
+        outline: none;
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
+        color: black;
+    }
